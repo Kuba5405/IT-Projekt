@@ -1,0 +1,354 @@
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <title>SHoOoP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+      <header>
+          <img src="../images/Screenshot_2023-06-15_134228-removebg.png" alt="SHoOoP Logo">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><span>|</span></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><span>|</span></li> 
+              <li><a href="help.html">Help</a></li>
+            </ul>
+          </nav>
+          <button id="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+              Shopping Cart
+          </button>
+      </header>
+
+      <main>
+          <div class="container">
+            <div class="search-bar">
+              <form>
+                <input type="search" id="searchTerm" name="search" placeholder="Search..." oninput="searchProducts()">
+                <input type="submit" value="Search" onclick="event.preventDefault()">
+            </form>
+            </div>
+            <div class="category-container">
+            <div class="picture-container">
+              <div class="category-item">
+                <a href="#category1">
+                  <img src="../images/Unbenannt1.png" alt="Picture 1">
+                  <h2>Category 1</h2>   
+                </a>
+              </div>
+              <div class="category-item">
+                <a href="#category2">
+                  <img src="../images/Unbenannt1.png" alt="Picture 2">
+                  <h2>Category 2</h2>
+                </a>
+              </div>
+              <div class="category-item">
+                <a href="#category3">
+                  <img src="../images/Unbenannt1.png" alt="Picture 3">
+                  <h2>Category 3</h2>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="" class="shop-now-button">more categories</a>
+              </div>
+            </div>
+            <hr>
+            <div class="product-grid" id="category1">
+              <h2 class="title">Category 1</h2>
+              <a href="product.html">
+                <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 1">
+                  <h3 class="product-name">Product 1</h3>
+                  <p class="product-price">$19.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </a>
+              
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 2">
+                <h3 class="product-name">Product 2</h3>
+                <p class="product-price">$24.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 3">
+                <h3 class="product-name">Product 3</h3>
+                <p class="product-price">$29.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 4">
+                <h3 class="product-name">Product 4</h3>
+                <p class="product-price">$14.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 5">
+                <h3 class="product-name">Product 5</h3>
+                <p class="product-price">$39.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 6">
+                  <h3 class="product-name">Product 6</h3>
+                  <p class="product-price">$39.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 7">
+                  <h3 class="product-name">Product 7</h3>
+                  <p class="product-price">$39.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <div class="product-grid" id="category2">
+              <h2 class="title">Category 2</h2>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 1">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-price">$19.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 2">
+                <h3 class="product-name">Product 2</h3>
+                <p class="product-price">$24.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 3">
+                <h3 class="product-name">Product 3</h3>
+                <p class="product-price">$29.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 4">
+                <h3 class="product-name">Product 4</h3>
+                <p class="product-price">$14.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 5">
+                <h3 class="product-name">Product 5</h3>
+                <p class="product-price">$39.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 6">
+                  <h3 class="product-name">Product 6</h3>
+                  <p class="product-price">$39.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 7">
+                  <h3 class="product-name">Product 7</h3>
+                  <p class="product-price">$39.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+            </div>
+            <hr>
+            <div class="product-grid" id="category3">
+              <h2 class="title">Category 3</h2>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 1">
+                <h3 class="product-name">Product 1</h3>
+                <p class="product-price">$19.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 2">
+                <h3 class="product-name">Product 2</h3>
+                <p class="product-price">$24.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 3">
+                <h3 class="product-name">Product 3</h3>
+                <p class="product-price">$29.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 4">
+                <h3 class="product-name">Product 4</h3>
+                <p class="product-price">$14.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="../images/Unbenannt2.png" alt="Product 5">
+                <h3 class="product-name">Product 5</h3>
+                <p class="product-price">$39.99</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 6">
+                  <h3 class="product-name">Product 6</h3>
+                  <p class="product-price">$39.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img src="../images/Unbenannt2.png" alt="Product 7">
+                  <h3 class="product-name">Product 7</h3>
+                  <p class="product-price">$39.99</p>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+            </div>
+        </main>
+        
+        
+        
+      
+        
+        <footer>
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-left">
+                <img src="../images/Screenshot_2023-06-15_134228-removebg.png" alt="SHoOoP Logo">
+                <p>Zürcherstrasse 1+7, 8640 Rapperswil-Jona</p>
+              </div>
+              <nav class="footer-nav">
+                <ul>
+                  <li><a href="help.html#impresssum">Impressum</a></li>
+                  <li><a href="help.html#AGB">AGB's</a></li>
+                  <li><a href="help.html#Cookie-Settings">Cookie-Settings</a></li>
+                  <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                </ul>
+              </nav>
+              <p class="copyright">© SHoOoP</p>
+            </div>
+          </div>
+      </footer>
+        
+  </body>
+  </html>

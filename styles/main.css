@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+  }
+  
+  h1 {
+    color: #ccc;
+    margin-right: 10px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    height: 60px; /* Adjust the height as needed */
+  }
+  
+  header img {
+    height: 78.531px; /* Adjust the width as needed */
+    width: 200px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the logo and search bar */
+  }
+  
+  #search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Add spacing between the search bar and navigation */
+  }
+  
+  #search-input {
+    width: 300px; /* Adjust the width as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    padding-right: 30px; /* Add space for the lens icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px 16px; /* Adjust the size of the lens icon */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0;
+    padding: 0 10px;
+  }
+  
+  nav li span {
+    color: #ccc;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Center the grid horizontally within the container */
+    align-items: center;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  .footer-left img {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .footer-left p {
+    color: #fff;
+    margin: 0;
+    padding-left: 10px; /* Adjust spacing between image and address */
+  }
+
+  .footer-nav{
+    margin: 30px;
+  }
+  
+  .footer-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+  
+  .footer-nav ul li {
+    margin-right: 30px;
+  }
+  
+  .footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .instagram {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .instagram a {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  .fab {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .fab:hover {
+    transform: translateY(-2px);
+  }
+
+  main {
+  background-color: #000;
+  padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .picture-container img {
+    margin: 0 10px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .break-line {
+    border: none;
+    border-top: 1px solid #fff;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .featured-text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Inverted Colors */
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+  }
+  
+  .product-item {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-item:nth-child(1) {
+    grid-row: 1 / span 2;
+  }
+  
+  .product-item:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .product-item:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }     
+  
+  .product-item:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .product-item:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .product-name {
+    color: #fff;
+  }
+  
+  .product-price {
+    color: #ccc;
+  }
+  
+  .product-rating {
+    color: #f7b500;
+  }
+  
+  .copyright{
+    color: #a9a7a7;
+  }
+
+  
